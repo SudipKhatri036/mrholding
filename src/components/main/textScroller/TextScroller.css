@@ -1,0 +1,24 @@
+.text-scroller {
+  overflow: hidden;
+  width: 100%;
+  margin-block: 1rem;
+  color: black;
+}
+
+.text-scroller__text {
+  white-space: nowrap;
+  font-size: 8vw;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-scroller__text {
+    font-size: 7vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .text-scroller__text {
+    font-size: 5vh;
+  }
+}

@@ -1,0 +1,38 @@
+.inquiry-area {
+  width: 100%;
+  background-color: #404040;
+  text-align: center;
+  padding-block: 2rem;
+  margin-bottom: 1rem;
+}
+
+.inquiry-area h2 {
+  color: white;
+  font-size: 3vw;
+  margin-bottom: 2rem;
+}
+
+.inquiry-area .btn--speech-btn {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .inquiry-area h2 {
+    font-size: 3vh;
+  }
+
+  .inquiry-area .btn--speech-btn {
+    font-size: 3vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .inquiry-area h2 {
+    font-size: 2.8vh;
+  }
+
+  .inquiry-area .btn--speech-btn {
+    font-size: 2.3vh;
+  }
+}

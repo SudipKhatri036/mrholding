@@ -1,0 +1,14 @@
+.speech__features-cont {
+  padding: 2rem 0;
+}
+
+.speech__features-card-cont {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+@media only screen and (max-width: 340px) {
+  .speech__features-card-cont {
+    padding: 1rem;
+  }
+}

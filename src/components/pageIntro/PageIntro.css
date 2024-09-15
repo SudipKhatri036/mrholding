@@ -1,0 +1,31 @@
+.page__intro-cont {
+  width: 100%;
+  padding: 2rem;
+  background-color: #464646;
+  display: flex;
+}
+
+.page__intro-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+}
+
+.page .horizontal-line {
+  height: 2px;
+  background: #000;
+}
+
+.intro-cont__subhead {
+  font-size: 1.2vh;
+  text-align: center;
+  color: #444;
+}
+
+@media only screen and (max-width: 340px) {
+  .page__intro-cont {
+    padding: 1rem;
+  }
+}

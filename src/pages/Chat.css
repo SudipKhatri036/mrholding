@@ -1,0 +1,102 @@
+.chat {
+  width: 100%;
+}
+
+.chat .faq__container {
+  border-top: 1px solid #444;
+  padding-block: 2rem;
+}
+
+.chat .horizontal-line {
+  width: 5%;
+  height: 4px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.chat .speech__intro-cont {
+  background-color: white;
+}
+
+.chat .intro__card-count {
+  display: none;
+}
+
+/* ---------------------------------------- */
+
+.advantage {
+  padding: 2rem;
+}
+
+.advantage h2 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.advantage .speech__features-card {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.advantage .features__desc {
+  width: 100%;
+}
+
+.advantage .features__desc h3 {
+  width: 100%;
+}
+
+.advantage .features-img-wrap {
+  width: 70%;
+  margin: 0 auto;
+  height: 200px;
+}
+.advantage .features-img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+
+.advantage .speech__features-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+  .advantage .speech__features-card:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .advantage h2 {
+    font-size: 2.5vh;
+  }
+
+  .advantage .horizontal-line {
+    width: 10%;
+  }
+
+  .advantage .features-img-wrap {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .advantage .speech__features-card {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .chat .speech__intro-cont {
+    margin-top: 4rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .chat .speech__intro-cont {
+    margin-top: 1rem;
+  }
+
+  .chat .intro-cont__subhead {
+    margin-bottom: 1rem;
+  }
+}

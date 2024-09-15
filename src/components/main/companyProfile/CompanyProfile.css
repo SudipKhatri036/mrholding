@@ -1,0 +1,49 @@
+.company-profile {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+.company-profile h2 {
+  font-size: 4vw;
+  text-align: center;
+}
+
+.company-profile h2 span {
+  display: block;
+  font-size: 2vw;
+}
+
+.company-profile__details-cont {
+  padding: 1rem;
+  font-size: 1.3vw;
+}
+
+dt {
+  width: 15%;
+}
+
+dd {
+  width: 84%;
+}
+
+@media only screen and (max-width: 768px) {
+  .company-profile__details-cont {
+    font-size: 1.3vh;
+  }
+
+  dt {
+    width: 20%;
+  }
+
+  dd {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 308px) {
+  .company-profile__details-cont {
+    font-size: 1vh;
+  }
+}

@@ -1,0 +1,43 @@
+.page-inquiry {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.page-inquiry p {
+  color: #444;
+  margin-bottom: 0.5rem;
+  font-size: 1.5vw;
+}
+
+.page-inquiry .form {
+  width: 100%;
+  margin-top: 3rem;
+  height: 120vh;
+}
+
+@media only screen and (max-width: 900px) {
+  .page-inquiry .form {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .page-inquiry p {
+    font-size: 1.8vh;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .page-inquiry {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .page-inquiry {
+    padding: 1rem;
+  }
+  .page-inquiry .form {
+    padding: 1rem;
+  }
+}

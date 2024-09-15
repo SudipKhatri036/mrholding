@@ -1,0 +1,36 @@
+.guide-content {
+  width: 60%;
+  text-align: left;
+}
+
+.guide-content h2 {
+  font-size: 3vw;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.guide-content-para {
+  font-size: 1.8vw;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.guide-img-wrap {
+  width: 100%;
+}
+
+.guide-img-wrap img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .guide-content {
+    width: 100%;
+  }
+
+  .guide-img-wrap {
+    width: 50%;
+  }
+}

@@ -1,0 +1,221 @@
+.chat__hero {
+  width: 100%;
+  height: calc(90vh - 80px);
+  background: url(../../../chat-hero-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.chat__hero-content {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  z-index: 2;
+}
+
+.chat__hero-title {
+  width: 60%;
+  font-size: 2.5vw;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+.circle-img-cont {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.chat__hero-subtitle {
+  width: 60%;
+}
+
+.chat__btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.btn--chat-btn {
+  background-color: transparent;
+  color: #e6b1ff;
+  border: 1px solid #e6b1ff;
+  padding: 0.5rem;
+}
+
+.caht__hero-laptop {
+  position: relative;
+}
+
+.img-mac {
+  width: 450px;
+  height: 300px;
+
+  position: absolute;
+  right: 5%;
+  bottom: 20%;
+  background: url(../../../imagemac.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mac-screen {
+  width: 380px;
+  height: 245px;
+  background: url(../../../mask.svg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 26%;
+  right: 8%;
+}
+
+@media only screen and (max-width: 1100px) {
+  .img-mac {
+    width: 300px;
+    height: 200px;
+    background-size: contain;
+  }
+
+  .mac-screen {
+    width: 220px;
+    height: 170px;
+    background-size: contain;
+    right: 9%;
+    bottom: 24%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .chat__hero-content {
+    text-align: center;
+  }
+
+  .chat__hero-title {
+    width: 100%;
+  }
+
+  .circle-img-cont {
+    justify-content: center;
+  }
+
+  .chat__hero-subtitle {
+    width: 100%;
+  }
+
+  .chat__btn-cont {
+    align-items: center;
+  }
+
+  .img-mac {
+    position: absolute;
+    bottom: -8%;
+    right: 30%;
+  }
+
+  .mac-screen {
+    position: absolute;
+    bottom: -4%;
+    right: 36%;
+  }
+
+  .btn--chat-btn {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chat__hero-title {
+    font-size: 2.5vh;
+  }
+  .chat__hero-subtitle {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .chat__hero-title {
+    font-size: 2.5vh;
+  }
+  .chat__hero-subtitle {
+    font-size: 2vh;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .img-mac {
+    position: absolute;
+    bottom: -15%;
+    right: 25%;
+  }
+
+  .mac-screen {
+    position: absolute;
+    bottom: -11%;
+    right: 33%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .chat__hero-content {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+
+  .circle-img-cont {
+    width: 100%;
+    height: 80px;
+  }
+  .circle-img-cont img {
+    height: 100%;
+  }
+
+  .img-mac {
+    position: absolute;
+    bottom: -15%;
+    right: 15%;
+  }
+
+  .mac-screen {
+    position: absolute;
+    bottom: -11%;
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .chat__hero-content {
+    padding-top: 3rem;
+  }
+
+  .circle-img-cont {
+    gap: 0.5rem;
+  }
+
+  .chat__btn-cont {
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-top: 0.5rem;
+  }
+
+  .btn--chat-btn {
+    width: 80%;
+    font-size: 1.5vh;
+  }
+
+  .img-mac {
+    bottom: -2%;
+    height: 100px;
+    right: 2%;
+  }
+
+  .mac-screen {
+    height: 80px;
+    bottom: 0%;
+    right: 15%;
+  }
+}

@@ -1,0 +1,9 @@
+.product {
+  padding: 0 2rem;
+}
+
+@media only screen and (max-width: 300px) {
+  .product {
+    padding: 0 0.7rem;
+  }
+}

@@ -1,0 +1,20 @@
+.btn--boxArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid black;
+  font: inherit;
+}
+
+.btn-icon {
+  width: 40px;
+  transition: all 0.3s ease;
+  height: 30px;
+  font-size: 1vw;
+}
+
+.btn--boxArrow:hover .btn-icon {
+  color: maroon;
+  transform: scale(1.4);
+}

@@ -1,0 +1,101 @@
+.speech__hero-cont {
+  padding: 2rem 4rem;
+  height: calc(100vh - 100px);
+  color: white;
+}
+
+.speech .speech__hero-cont {
+  background: url("../../../speech-hero-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.marketing .speech__hero-cont {
+  background: url("../../../marketing-hero-bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.speech__hero {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+.speech__hero h3 {
+  font-size: 2vw;
+  margin-bottom: 1rem;
+}
+
+.speech__hero p {
+  font-size: 1.8vw;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.speech__hero h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 4vw;
+  line-height: 4rem;
+}
+
+.speech__hero h1 span {
+  display: block;
+}
+.speech__btn-cont {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.btn--speech-btn {
+  width: 25%;
+  padding: 0.5rem;
+  font-size: 1.5vw;
+  border-radius: 20px;
+}
+
+.btn--speech-btn:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 850px) {
+  .speech__hero {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .speech__hero-cont {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .speech__hero {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .speech__hero h1 {
+    font-size: 6vh;
+  }
+
+  .speech__hero p,
+  .speech__hero h3 {
+    font-size: 3vh;
+  }
+
+  .speech__btn-cont {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn--speech-btn {
+    width: 60%;
+    font-size: 1.5vh;
+  }
+}

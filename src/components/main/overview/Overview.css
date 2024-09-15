@@ -1,0 +1,57 @@
+.overview {
+  padding-top: 2rem;
+  color: black;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.overview__content {
+  font-size: 1.3vw;
+  font-weight: 600;
+  color: #444;
+}
+
+.overview__content span {
+  display: block;
+  margin-block: 0.8rem;
+}
+
+@media only screen and (max-width: 950px) {
+  .overview {
+    padding-top: 9rem;
+  }
+
+  .overview__content {
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .overview__content {
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .overview__content {
+    font-size: 1.5vh;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .overview {
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .overview {
+    padding-top: 8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .overview {
+    padding-top: 8rem;
+  }
+}

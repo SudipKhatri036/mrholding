@@ -1,0 +1,41 @@
+.header__menu-cont {
+  display: none;
+}
+
+.btn--menu-btn {
+  width: 100%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 0.4rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn--menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.header.active .btn--menu-btn :nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg);
+}
+.header.active .btn--menu-btn :nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1105px) {
+  .header__menu-cont {
+    display: flex;
+
+    gap: 1.2rem;
+    z-index: 10;
+  }
+}
