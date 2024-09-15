@@ -1,5 +1,5 @@
 import ButtonArrow from "../buttonArrow/ButtonArrow";
-import "./inquiryArea.css";
+import "./InquiryArea.css";
 
 function InquiryArea() {
   return (
