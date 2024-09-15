@@ -1,4 +1,4 @@
-import PostCard from "../postCard.jsx/postCard";
+import PostCard from "../postCard/PostCard";
 import "./PostCardCont.css";
 import ButtonArrow from "../../buttonArrow/ButtonArrow";
 
