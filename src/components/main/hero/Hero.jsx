@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { easeIn, motion, useScroll, useTransform } from "framer-motion";
 import { FaChevronDown } from "react-icons/fa";
 
+import HeroImg from "../../heroImg/HeroImg";
+
 import "./Hero.css";
 
 const heroTextVar = {
@@ -21,7 +23,7 @@ function Hero({ onGoToOverview }) {
   const { scrollYProgress } = useScroll({
     target: targetRef,
 
-    offset: ["0.8 0.9", "0.00 0.3"],
+    offset: ["1 0.8", "0.00 0.3"],
   });
 
   const TranslateTo = useTransform(scrollYProgress, [0, 1], ["25px", "-50px"]);
@@ -59,14 +61,11 @@ function Hero({ onGoToOverview }) {
       >
         <p>
           JAPAN AI combines the wisdom and experience of our predecessors with
-          modern innovation
-        </p>
-
-        <p>
-          to create a vairety of new value to improve the productivity of
-          Japanese companies and revitalize industry.
+          modern innovation to create a vairety of new value to improve the
+          productivity of Japanese companies and revitalize industry.
         </p>
       </motion.div>
+      <HeroImg />
     </div>
   );
 }

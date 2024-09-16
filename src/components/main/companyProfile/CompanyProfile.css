@@ -6,18 +6,17 @@
 }
 
 .company-profile h2 {
-  font-size: 4vw;
   text-align: center;
 }
 
 .company-profile h2 span {
   display: block;
-  font-size: 2vw;
+  font-size: 1rem;
 }
 
 .company-profile__details-cont {
   padding: 1rem;
-  font-size: 1.3vw;
+  font-size: 1rem;
 }
 
 dt {
@@ -29,8 +28,17 @@ dd {
 }
 
 @media only screen and (max-width: 768px) {
+  .company-profile {
+    padding: 1rem;
+  }
+
   .company-profile__details-cont {
-    font-size: 1.3vh;
+    font-size: 0.8rem;
+    padding: 0;
+  }
+
+  .company-profile h2 span {
+    font-size: 0.9rem;
   }
 
   dt {
@@ -44,6 +52,6 @@ dd {
 
 @media only screen and (max-width: 308px) {
   .company-profile__details-cont {
-    font-size: 1vh;
+    font-size: 0.7rem;
   }
 }

@@ -1,4 +1,5 @@
-import { Route, Routes, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import Home from "./pages/Home";
@@ -9,7 +10,8 @@ import Seminar from "./pages/Seminar";
 import News from "./pages/News";
 import CompanyGuide from "./pages/CompanyGuide";
 import Inquiry from "./pages/Inquiry";
-import { useEffect, useState } from "react";
+import PostPage from "./pages/PostPage";
+import PostPageContent from "./components/postPageContent/PostPageContetnt";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -27,7 +29,11 @@ function App() {
         <Route path="/speech" element={<Speech />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/seminar" element={<Seminar />} />
-        <Route path="/news" element={<News />} />
+        <Route path="/news" element={<News />}>
+          {/* <Route path="newspost" element={<PostPage />}>
+            <Route path="newspostcontent" element={<PostPageContent />} />
+          </Route> */}
+        </Route>
         <Route path="/companyguide" element={<CompanyGuide />} />
         <Route path="/inquiry" element={<Inquiry />} />
       </Routes>

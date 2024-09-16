@@ -3,25 +3,26 @@ import "./PageHero.css";
 
 function PageHero({ pageMainTxt, pageSubTxt, pageTxt }) {
   return (
-    <div className={`speech__hero-cont`}>
-      <div className={`speech__hero`}>
-        <div className="speech_content">
-          <h3 className="speech__hero__subtitle">{pageSubTxt}</h3>
-          <p className="speech__hero_para">{pageTxt || pageSubTxt}</p>
+    <div className="page__hero-cont">
+      <div className="page__hero">
+        <div className="page_content">
+          <h3 className="page__hero__subtitle">{pageSubTxt}</h3>
+          <p className="page__hero_para">{pageTxt || pageSubTxt}</p>
           <h1>
             Japan AI <span>{pageMainTxt}</span>
           </h1>
         </div>
 
-        <div className="speech__btn-cont">
+        <div className="pageHero__btn-cont">
           <ButtonArrow
             btnTxt="Download Documents"
-            styleClass="btn--speech-btn"
+            styleClass="btn--pageHero-btn"
           />
 
-          <ButtonArrow btnTxt="Inquiry" styleClass="btn--speech-btn" />
+          <ButtonArrow btnTxt="Inquiry" styleClass="btn--pageHero-btn" />
         </div>
       </div>
+      <div className="pageHero-bg-all"></div>
     </div>
   );
 }

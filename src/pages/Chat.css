@@ -29,15 +29,7 @@
 }
 
 .advantage h2 {
-  font-size: 2.5vw;
   text-align: center;
-}
-
-.advantage .speech__features-card {
-  width: 70%;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  gap: 2rem;
 }
 
 .advantage .features__desc {
@@ -58,17 +50,17 @@
   height: 100%;
 }
 
-.advantage .speech__features-card:nth-child(even) {
+.advantage .page__features-card:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 @media only screen and (max-width: 768px) {
-  .advantage .speech__features-card:nth-child(even) {
-    flex-direction: column;
+  .advantage {
+    padding: 1rem;
   }
 
-  .advantage h2 {
-    font-size: 2.5vh;
+  .advantage .page__features-card:nth-child(even) {
+    flex-direction: column;
   }
 
   .advantage .horizontal-line {
@@ -81,18 +73,18 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .advantage .speech__features-card {
+  .advantage .page__features-card {
     width: 100%;
   }
 }
 @media only screen and (max-width: 550px) {
-  .chat .speech__intro-cont {
+  .chat .page__intro-cont {
     margin-top: 4rem;
   }
 }
 
 @media only screen and (max-width: 330px) {
-  .chat .speech__intro-cont {
+  .chat .page__intro-cont {
     margin-top: 1rem;
   }
 

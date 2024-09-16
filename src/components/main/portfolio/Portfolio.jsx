@@ -4,6 +4,7 @@ import {
   useScroll,
   useTransform,
   easeInOut,
+  useMotionValueEvent,
   useSpring,
 } from "framer-motion";
 
@@ -15,12 +16,12 @@ function Portfolio() {
 
   const { scrollYProgress } = useScroll({
     target: scrollRef,
-    offset: ["0.1 end", "1.3 end"],
+    offset: ["0.0.8 0.64", "0.8 0.9"],
   });
 
   const { scrollYProgress: scrollYProgressTwo } = useScroll({
     target: scrollRefTwo,
-    offset: ["0.1 end", "1.3 end"],
+    offset: ["0.0.8 0.64", "0.8 0.9"],
   });
 
   const translateYAnimOne = useTransform(
@@ -46,14 +47,9 @@ function Portfolio() {
 
   return (
     <div className="portfolio">
-      <div className="portfolio__img-cont">
+      <div className="portfolio__img-cont" ref={scrollRef}>
         <div className="large-img-cont">
-          <img
-            src="./01hero.jpg"
-            alt="Girl image"
-            className="large-img"
-            ref={scrollRef}
-          />
+          <img src="./01hero.jpg" alt="Girl image" className="large-img" />
         </div>
         <motion.div
           style={{ translateY: smoothTranslate }}
@@ -63,14 +59,12 @@ function Portfolio() {
           <img src="./02hero.jpg" alt="three girl" className="small-img" />
         </motion.div>
       </div>
-      <div className="portfolio__img-cont portfolio__img-cont--rowrev">
+      <div
+        className="portfolio__img-cont portfolio__img-cont--rowrev"
+        ref={scrollRefTwo}
+      >
         <div className="large-img-cont">
-          <img
-            src="./04hero.jpg"
-            alt="Girl image"
-            className="large-img"
-            ref={scrollRefTwo}
-          />
+          <img src="./04hero.jpg" alt="Girl image" className="large-img" />
         </div>
         <motion.div
           style={{ translateY: smoothTranslateTwo }}

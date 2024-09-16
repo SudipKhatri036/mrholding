@@ -1,11 +1,32 @@
 import { IoIosArrowUp } from "react-icons/io";
 import Logo from "../logo/Logo";
 import "./Footer.css";
+import { useState, useEffect } from "react";
 
 function Footer() {
+  const [scrollActive, setScrollActive] = useState(false);
+
   function handleMoveToTop() {
     window.scrollTo(0, 0);
   }
+
+  function handleScroll() {
+    if (window.scrollY > window.innerHeight) {
+      setScrollActive(true);
+    } else {
+      setScrollActive(false);
+    }
+  }
+
+  useEffect(() => {
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.addEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="footer">
@@ -26,10 +47,13 @@ function Footer() {
       </div>
       <p className="footer__copyright">&copy; JAPAN AI, Inc.</p>
 
-      <button className="btn btn--backto-top" onClick={handleMoveToTop}>
-        Back to Top
-        <IoIosArrowUp className="btn-icon-up" />
-      </button>
+      {scrollActive && (
+        <div className="btn-pulse-cont">
+          <button className="btn btn--pulse-up" onClick={handleMoveToTop}>
+            <IoIosArrowUp className="btn-icon-up" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

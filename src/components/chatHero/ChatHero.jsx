@@ -24,10 +24,7 @@ function ChatHero() {
           <ButtonArrow btnTxt="inquiry" styleClass="btn--chat-btn" />
         </div>
       </div>
-      <div className="chat__hero-laptop">
-        <div className="img-mac"></div>
-        <div className="mac-screen"></div>
-      </div>
+      <div className="chat__hero-bg"></div>
     </div>
   );
 }

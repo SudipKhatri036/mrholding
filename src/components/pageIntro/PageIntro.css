@@ -5,6 +5,10 @@
   display: flex;
 }
 
+.page__intro-cont h2 {
+  font-size: 1.5rem;
+}
+
 .page__intro-content {
   width: 100%;
   background-color: white;
@@ -19,13 +23,16 @@
 }
 
 .intro-cont__subhead {
-  font-size: 1.2vh;
   text-align: center;
   color: #444;
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 768px) {
   .page__intro-cont {
     padding: 1rem;
+  }
+
+  .page__intro-content {
+    padding: 2rem 1rem;
   }
 }

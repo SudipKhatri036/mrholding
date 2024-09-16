@@ -1,11 +1,11 @@
 import Faq from "../components/faq/Faq";
-import ButtonArrow from "../components/buttonArrow/ButtonArrow";
-import "./Chat.css";
 import ChatHero from "../components/chatHero/ChatHero";
 import HorizontalLine from "../components/horizontalLine/HorizontalLine";
-import SpeechFeaturesCard from "../components/speechFeaturesCard/SpeechFeaturesCard";
 import InquiryArea from "../components/InquiryArea/InquiryArea";
 import PageIntro from "../components/pageIntro/PageIntro";
+import PageFeaturesCard from "../components/pageFeaturesCard/PageFeaturesCard";
+
+import "./Chat.css";
 
 function Chat() {
   return (
@@ -13,12 +13,12 @@ function Chat() {
       <ChatHero />
       <PageIntro />
       <div className="advantage">
-        <h2>4 advantage over ChatGPT</h2>
+        <h2 className="page-heading">4 advantage over ChatGPT</h2>
         <HorizontalLine />
-        <SpeechFeaturesCard imgSrc="./content_col1.png" />
-        <SpeechFeaturesCard imgSrc="./content_col1.png" />
-        <SpeechFeaturesCard imgSrc="./content_col1.png" />
-        <SpeechFeaturesCard imgSrc="./content_col1.png" />
+        <PageFeaturesCard imgSrc="./content_col1.png" />
+        <PageFeaturesCard imgSrc="./content_col1.png" />
+        <PageFeaturesCard imgSrc="./content_col1.png" />
+        <PageFeaturesCard imgSrc="./content_col1.png" />
       </div>
 
       <InquiryArea />

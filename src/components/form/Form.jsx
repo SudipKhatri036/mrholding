@@ -3,29 +3,53 @@ import "./Form.css";
 function Form() {
   return (
     <form className="form">
-      <label htmlFor="sur-name">Name (Sur name)</label>
-      <span className="form-required">*</span>
-      <input type="text" id="sur-name" placeholder="Surname" />
-
-      <label htmlFor="name">Name (First name)</label>
-      <span className="form-required">*</span>
-      <input type="text" placeholder="First name" id="name" />
-      <label>Company name </label>
-      <span className="form-required">*</span>
-      <input type="text" name="company1" placeholder="Company Name" />
-      <label>Company name </label>
-      <span className="form-required">*</span>
-      <input type="text" name="company2" placeholder="Company Name" />
-      <label>Company name </label>
-      <input type="text" placeholder="Company Name" />
-      <label>Company name </label>
-      <input type="text" name="company3" placeholder="Company Name" />
-      <label>Company name </label>
-      <input type="text" name="company4" placeholder="Company Name" />
-      <label>Company name </label>
-      <input type="text" name="company5" placeholder="Company Name" />
+      <div className="form-container">
+        <input placeholder="Full Name" type="text" className="input" />
+        <input placeholder="Email" id="mail" type="email" className="input" />
+        <input
+          placeholder="050-7123-2933"
+          id="number"
+          type="number"
+          className="input"
+        />
+        <input
+          placeholder="Company Nmae"
+          id="company-name"
+          type="text"
+          className="input"
+        />
+        <textarea
+          placeholder="Inquiry Message"
+          rows="10"
+          cols="30"
+          id="message"
+          name="message"
+          className="textarea"
+        ></textarea>
+        <div className="button-container">
+          <button className="submit-button">Submit</button>
+        </div>
+      </div>
     </form>
   );
 }
 
 export default Form;
+
+{
+  /* <div className="form-container">
+    <div className="form">
+        <span className="heading">Get in touch</span>
+        <input placeholder="Name" type="text" className="input">
+        <input placeholder="Email" id="mail" type="email" className="input">
+        <textarea placeholder="Say Hello" rows="10" cols="30" id="message" name="message" className="textarea"></textarea>
+        <div className="button-container">
+        <div className="send-button">Send</div>
+        <div className="reset-button-container">
+            <div id="reset-btn" className="reset-button">Reset</div>
+        </div>
+    </div>
+</div>
+</div>
+   */
+}

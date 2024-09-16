@@ -30,6 +30,7 @@
 
 .post__img-wrap {
   width: 100%;
+
   overflow: hidden;
 }
 
@@ -43,7 +44,7 @@
 .post__img-wrap::before {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 65%;
   position: absolute;
   background-color: rgba(255, 255, 255, 0.5);
   top: 0;
@@ -69,25 +70,26 @@
 }
 
 .details__post-cat {
-  font-size: 1vw;
+  font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
-  border: 2px solid #00b1e9;
-  color: #00b1e9;
+  border: 2px solid #015f9d;
+  color: #094b77;
   font-weight: 600;
 }
 
 .details__post-date,
 .details__short-desc {
-  font-size: 0.9vw;
+  font-size: 1rem;
+  color: #444;
 }
 
 @media only screen and (max-width: 768px) {
   .details__post-date,
   .details__short-desc {
-    font-size: 1.5vh;
+    font-size: 0.9rem;
   }
 
-  .details__post-cat {
-    font-size: 1.8vh;
+  .details__short-desc {
+    text-align: center;
   }
 }

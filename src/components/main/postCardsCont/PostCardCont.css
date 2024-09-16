@@ -1,7 +1,8 @@
 .posts {
+  max-width: 1440px;
   width: 80%;
   margin: 0 auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .posts__post-card-cont {
@@ -12,21 +13,22 @@
 
 .btn--gotoBtn {
   width: 50%;
-  font-size: 2vw;
+  font-size: 1.5rem;
+  padding-block: 0.8rem;
   margin: 0 auto;
   margin-top: 2rem;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid #083c5e;
+  color: #083c5e;
 }
 
 @media only screen and (max-width: 768px) {
   .posts {
-    width: 90%;
+    width: 98%;
   }
 
   .btn--gotoBtn {
     width: 80%;
-    font-size: 2vh;
   }
 }
 
@@ -38,7 +40,7 @@
 
 @media only screen and (max-width: 450px) {
   .posts__post-card-cont {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 0;

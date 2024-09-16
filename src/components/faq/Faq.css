@@ -14,22 +14,19 @@
 }
 
 .faq__question {
-  font-size: 1.5vw;
   margin-bottom: 2rem;
 }
 
-.faq__answer {
-  font-size: 1vw;
-}
-
 @media only screen and (max-width: 768px) {
-  .faq__question {
-    font-size: 2vh;
-    margin-bottom: 2rem;
+  .faq {
+    padding: 1rem;
   }
 
-  .faq__answer {
-    font-size: 1.5vh;
+  .faq h2 {
+    font-size: 1.5rem;
+  }
+  .faq__question {
+    margin-bottom: 2rem;
   }
 }
 
@@ -41,15 +38,5 @@
 
   .faq__answer {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  .faq {
-    padding: 2rem;
-  }
-
-  .faq__container {
-    margin-bottom: 2rem;
   }
 }

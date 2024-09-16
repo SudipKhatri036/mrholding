@@ -41,11 +41,26 @@ body {
 .chat,
 .speech,
 .marketing,
-.posts,
 .page-seminar,
 .page-inquiry {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 4.5vw;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 0.9rem;
 }
 
 .flex {
@@ -66,43 +81,49 @@ body {
 }
 
 .section-heading {
-  font-size: 3vw;
   text-align: center;
   position: relative;
-  margin-block: 2rem;
-  color: black;
+  margin-bottom: 2rem;
+  color: #021d30;
 }
 
 .section-heading::after {
   content: "";
   height: 4px;
   width: 10%;
-  background-color: black;
+  background: linear-gradient(80deg, #970e03 0%, #083c5e 100%);
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
 
 h2.page-heading {
   text-align: center;
-  font-size: 3vw;
   background: linear-gradient(90deg, #000000 0%, #0450c2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
-  .section-heading {
-    font-size: 3vh;
+  h2 {
+    font-size: 1.2rem;
   }
 
-  h2.page-heading {
-    font-size: 3vh;
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 560px) {
+  h3 {
+    font-size: 0.9rem;
+  }
+
   .section-heading::after {
     width: 20%;
     height: 5px;

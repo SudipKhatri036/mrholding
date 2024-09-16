@@ -1,8 +1,8 @@
-import "./SpeechFeaturesCard.css";
+import "./PageFeaturesCard.css";
 
-function SpeechFeaturesCard({ imgSrc }) {
+function PageFeaturesCard({ imgSrc }) {
   return (
-    <div className="speech__features-card">
+    <div className="page__features-card">
       <div className="features-img-wrap">
         <img
           src={imgSrc ? imgSrc : "./feature_list_1.png"}
@@ -21,4 +21,4 @@ function SpeechFeaturesCard({ imgSrc }) {
   );
 }
 
-export default SpeechFeaturesCard;
+export default PageFeaturesCard;
