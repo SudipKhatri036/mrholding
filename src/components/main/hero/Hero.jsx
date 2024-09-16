@@ -50,7 +50,7 @@ function Hero({ onGoToOverview }) {
       </motion.h1>
       <div className="hero__btn-cont">
         <button className="btn btn--scroll" onClick={onGoToOverview}>
-          Scroll Down <FaChevronDown />
+          <FaChevronDown />
         </button>
       </div>
 

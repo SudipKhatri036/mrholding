@@ -7,6 +7,7 @@ function Menu({ onMenuOpen }) {
       <button className={`btn btn--menu-btn`} onClick={onMenuOpen}>
         <span></span>
         <span></span>
+        <span></span>
       </button>
     </div>
   );

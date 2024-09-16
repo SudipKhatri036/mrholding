@@ -72,7 +72,9 @@
 .details__post-cat {
   font-size: 0.8rem;
   padding: 0.3rem 0.8rem;
-  border: 2px solid #015f9d;
+  border: 2px solid transparent;
+  border-image: linear-gradient(80deg, #970e03 0%, #083c5e 100%);
+  border-image-slice: 1;
   color: #094b77;
   font-weight: 600;
 }

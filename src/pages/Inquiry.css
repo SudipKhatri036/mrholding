@@ -7,10 +7,12 @@
   color: #444;
   margin-bottom: 0.5rem;
   font-size: 1.3rem;
+  text-align: center;
 }
 
 .page-inquiry .form {
   width: 100%;
+  margin: 0 auto;
   margin-top: 3rem;
 }
 
@@ -23,6 +25,10 @@
 @media only screen and (max-width: 768px) {
   .page-inquiry {
     padding: 1rem;
+  }
+
+  .page-inquiry p {
+    font-size: 1rem;
   }
 }
 

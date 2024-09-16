@@ -5,11 +5,11 @@
 }
 
 .guide h2 {
-  font-size: 3vw;
+  /* font-size: 3vw; */
 }
 
 .guide__para {
-  font-size: 1.2vw;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
@@ -27,16 +27,23 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .guide {
+    padding: 1rem;
+  }
   .guide__main-content {
     flex-direction: column;
   }
 
+  .guide .horizontal-line {
+    width: 15%;
+  }
   .guide h2 {
     font-size: 2.7vh;
   }
 
   .guide__para {
-    font-size: 1.5vh;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
   }
   .guide-content {
     text-align: center;

@@ -126,3 +126,16 @@
   border: 1px solid #ff7a01;
   color: #ff7a01;
 }
+
+@media only screen and (min-width: 1400px) {
+  input,
+  .textarea {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    margin: 0;
+  }
+}

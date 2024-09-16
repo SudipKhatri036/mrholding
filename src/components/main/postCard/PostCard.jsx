@@ -3,7 +3,7 @@ import "./PostCard.css";
 
 function PostCard({ imgSrc }) {
   return (
-    <Link to="newspost" className="post-card">
+    <Link to="/newspost" className="post-card">
       <div className="post__img-wrap">
         <img src={imgSrc} alt="Post image" />
       </div>

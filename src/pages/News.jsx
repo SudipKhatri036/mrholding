@@ -1,4 +1,3 @@
-import { Outlet } from "react-router-dom";
 import HorizontalLine from "../components/horizontalLine/HorizontalLine";
 import FooterCTA from "../components/main/footerCTA/FooterCTA";
 import PostCardsCont from "../components/main/postCardsCont/PostCardCont";

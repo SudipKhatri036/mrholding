@@ -11,7 +11,7 @@ import News from "./pages/News";
 import CompanyGuide from "./pages/CompanyGuide";
 import Inquiry from "./pages/Inquiry";
 import PostPage from "./pages/PostPage";
-import PostPageContent from "./components/postPageContent/PostPageContetnt";
+import PostPageContent from "./components/postPageContent/PostPageContent";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -29,11 +29,8 @@ function App() {
         <Route path="/speech" element={<Speech />} />
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/seminar" element={<Seminar />} />
-        <Route path="/news" element={<News />}>
-          {/* <Route path="newspost" element={<PostPage />}>
-            <Route path="newspostcontent" element={<PostPageContent />} />
-          </Route> */}
-        </Route>
+        <Route path="/news" element={<News />} />
+        <Route path="/newspost" element={<PostPage />} />
         <Route path="/companyguide" element={<CompanyGuide />} />
         <Route path="/inquiry" element={<Inquiry />} />
       </Routes>

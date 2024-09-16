@@ -1,11 +1,7 @@
-import { Outlet } from "react-router-dom";
+import PostPageContent from "../components/postPageContent/PostPageContent";
 
 function PostPage() {
-  return (
-    <>
-      <Outlet />
-    </>
-  );
+  return <PostPageContent />;
 }
 
 export default PostPage;
