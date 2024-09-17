@@ -13,6 +13,7 @@ function FooterCTA() {
         btnText="For inquireies, please click here"
         title="Contact"
         subtitle="If you have any questions or concerns please contact us here."
+        linkto="/inquiry"
       />
     </section>
   );

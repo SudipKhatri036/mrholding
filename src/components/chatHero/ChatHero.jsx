@@ -21,7 +21,11 @@ function ChatHero() {
         </p>
         <div className="chat__btn-cont">
           <ButtonArrow btnTxt="Download Documents" styleClass="btn--chat-btn" />
-          <ButtonArrow btnTxt="inquiry" styleClass="btn--chat-btn" />
+          <ButtonArrow
+            btnTxt="inquiry"
+            styleClass="btn--chat-btn"
+            linkto="/inquiry"
+          />
         </div>
       </div>
       <div className="chat__hero-bg"></div>

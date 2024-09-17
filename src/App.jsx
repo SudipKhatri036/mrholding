@@ -12,6 +12,7 @@ import CompanyGuide from "./pages/CompanyGuide";
 import Inquiry from "./pages/Inquiry";
 import PostPage from "./pages/PostPage";
 import PostPageContent from "./components/postPageContent/PostPageContent";
+import PageNotFound from "./pages/PageNotFound";
 
 function App() {
   const [isHome, setIsHome] = useState(true);
@@ -33,6 +34,7 @@ function App() {
         <Route path="/newspost" element={<PostPage />} />
         <Route path="/companyguide" element={<CompanyGuide />} />
         <Route path="/inquiry" element={<Inquiry />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>

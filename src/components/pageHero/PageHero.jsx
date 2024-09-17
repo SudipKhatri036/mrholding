@@ -19,7 +19,11 @@ function PageHero({ pageMainTxt, pageSubTxt, pageTxt }) {
             styleClass="btn--pageHero-btn"
           />
 
-          <ButtonArrow btnTxt="Inquiry" styleClass="btn--pageHero-btn" />
+          <ButtonArrow
+            btnTxt="Inquiry"
+            styleClass="btn--pageHero-btn"
+            linkto="/inquiry"
+          />
         </div>
       </div>
       <div className="pageHero-bg-all"></div>

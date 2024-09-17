@@ -2,7 +2,7 @@ import PostCard from "../postCard/PostCard";
 import "./PostCardCont.css";
 import ButtonArrow from "../../buttonArrow/ButtonArrow";
 
-function PostCardsCont({ title, btnText, imgSrc }) {
+function PostCardsCont({ title, btnText, imgSrc, linkto }) {
   return (
     <section className="posts">
       <h2 className="section-heading">{title}</h2>
@@ -15,7 +15,7 @@ function PostCardsCont({ title, btnText, imgSrc }) {
         <PostCard imgSrc={imgSrc} />
       </div>
 
-      <ButtonArrow btnTxt={btnText} styleClass="btn--gotoBtn" />
+      <ButtonArrow btnTxt={btnText} styleClass="btn--gotoBtn" linkto={linkto} />
     </section>
   );
 }
