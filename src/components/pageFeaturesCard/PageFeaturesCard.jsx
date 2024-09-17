@@ -1,4 +1,4 @@
-import "./PageFeaturesCard.css";
+import "./pageFeaturesCard.css";
 
 function PageFeaturesCard({ imgSrc }) {
   return (
