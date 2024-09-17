@@ -76,6 +76,7 @@
 .header.active.header--not-home .nav__links,
 .header.active.header--not-home .nav__links::before,
 .header.active .nav__links,
+.header.header--fixed.active .nav__links::before,
 .header.active .nav__links::before {
   color: white;
 }

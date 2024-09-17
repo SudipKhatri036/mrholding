@@ -12,14 +12,18 @@
 }
 
 .btn--gotoBtn {
-  width: 50%;
+  width: 70%;
   font-size: 1.5rem;
   padding-block: 0.8rem;
   margin: 0 auto;
   margin-top: 2rem;
   background-color: transparent;
-  border: 1px solid #083c5e;
+  border: none;
   color: #083c5e;
+}
+
+.btn--gotoBtn:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 768px) {
@@ -28,7 +32,7 @@
   }
 
   .btn--gotoBtn {
-    width: 80%;
+    width: 90%;
   }
 }
 

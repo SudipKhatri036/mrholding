@@ -14,11 +14,11 @@
   font-size: 1.2rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  padding: 0.8rem 1rem;
+  padding: 0.5rem 1.2rem;
   border-radius: 20px;
   background-color: #083c5e;
   color: white;
-  border: 1px solid #083c5e;
+  border: 2px solid #083c5e;
 }
 
 .inquiry-area .btn--inquiry-btn:hover {
