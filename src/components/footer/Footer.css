@@ -39,6 +39,7 @@
   top: 80%;
   bottom: 10%;
   right: 3%;
+  z-index: 99;
 }
 
 .btn--pulse-up {
