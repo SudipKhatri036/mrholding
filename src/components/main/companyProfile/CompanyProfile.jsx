@@ -9,7 +9,7 @@ function CompanyProfile() {
       <dl className="company-profile__details-cont">
         <div className="flex">
           <dt>Company name</dt>
-          <dd>Japan AI Co.,Ltd.</dd>
+          <dd>Mr Holdings</dd>
         </div>
         <div className="flex">
           <dt>Business purpose</dt>

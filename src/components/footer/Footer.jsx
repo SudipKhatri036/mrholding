@@ -38,23 +38,24 @@ function Footer() {
           <div className="footer-logo">
             <img src="./logo.png" alt="Logo" className="logo__image" />
           </div>
-          <h3 className="footer-heading">Grievance Officer</h3>
+          <h3 className="footer-heading">Mr Holdings</h3>
           <div className="footer-contact-detail">
-            <p className="footer-txt">Bijay Rai</p>
             <p className="footer-txt">
               Contact:{" "}
               <a href="#" className="footer-txt">
-                +9779801079465
+                +9779813112182
               </a>
             </p>
             <p className="footer-txt">
               Email:{" "}
               <a href="#" className="footer-txt">
-                csd@esewa.com.np
+                mountroyal@gmail.com
               </a>
+            </p>
+            <p className="footer-txt">
+              Website:{" "}
               <a href="#" className="footer-txt">
-                {" "}
-                csd@esewa.com.np
+                mountroyal.co.jp
               </a>
             </p>
           </div>
