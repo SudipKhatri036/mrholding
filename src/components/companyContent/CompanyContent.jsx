@@ -9,7 +9,7 @@ function CompanyContent() {
         details.
       </p>
       <div className="guide-img-wrap">
-        <img src="./company_guide_tmb.png" alt="Company guide tmb" />
+        <img src="./mrholding-logo.png" alt="Company guide tmb" />
       </div>
     </div>
   );

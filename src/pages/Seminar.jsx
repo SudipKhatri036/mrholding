@@ -8,7 +8,7 @@ function Seminar() {
       <PostCardsCont
         title="Seminar"
         btnText="See the list of the seminars here"
-        imgSrc="./news-img-3.jpg"
+        imgSrc="./news-img.jpg"
       />
 
       <FooterCTA />

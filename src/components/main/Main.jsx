@@ -29,13 +29,13 @@ function Main() {
       <PostCardsCont
         title="News"
         btnText="Click here for the list of news"
-        imgSrc="./news-img-1.jpg"
+        imgSrc="./news-img.jpg"
         linkto="/news"
       />
       <PostCardsCont
         title="Seminar"
         btnText="See the list of the seminars here"
-        imgSrc="./news-img-3.jpg"
+        imgSrc="./news-img.jpg"
         linkto="/seminar"
       />
 

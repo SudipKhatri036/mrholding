@@ -21,13 +21,14 @@
 }
 
 .speech .pageHero-bg-all {
-  background: url("../../../speech-hero-bg.png") no-repeat;
+  background: url("../../../speech-hero-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
+  opacity: 0.9;
 }
 
 .marketing .pageHero-bg-all {
-  background: url("../../../marketing-hero-bg.png") no-repeat;
+  background: url("../../../marketing-hero-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }

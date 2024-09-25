@@ -12,9 +12,9 @@ function HeroImg() {
     >
       <motion.img
         initial={{ opacity: 0, scale: 1.2 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 0.3, scale: 1 }}
         transition={{ duration: 1, delay: 0.5, ease: easeIn }}
-        src="./main.jpg"
+        src="./main-hero.jpg"
         alt="Main Background"
         className="app__main-img"
       />
