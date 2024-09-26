@@ -212,16 +212,15 @@ function Footer() {
           </div>
         </div>
       </div>
+      {scrollActive && (
+        <div className="btn-pulse-cont">
+          <button className="btn btn--pulse-up" onClick={handleMoveToTop}>
+            <IoIosArrowUp className="btn-icon-up" />
+          </button>
+        </div>
+      )}
     </footer>
   );
 }
 
 export default Footer;
-
-//  {scrollActive && (
-//         <div className="btn-pulse-cont">
-//           <button className="btn btn--pulse-up" onClick={handleMoveToTop}>
-//             <IoIosArrowUp className="btn-icon-up" />
-//           </button>
-//         </div>
-//       )}
